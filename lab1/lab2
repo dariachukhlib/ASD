@@ -1,0 +1,19 @@
+#zadanie1
+def silnia(n):
+    if n==1:
+        return 1
+    else:
+        return silnia(n-1)*n
+#zadanie2
+def odwroc_tablice(array):
+    if len(array) == 0:
+        return []
+    else:
+        return [array[-1]] + odwroc_tablice(array[:-1])
+
+array = [1,2,3,4,5,67]
+array1 = [1,31,53,20,1]
+print(silnia(5))
+print(silnia(10))
+print(odwroc_tablice(array))
+print(odwroc_tablice(array1))
